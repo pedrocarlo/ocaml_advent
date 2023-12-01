@@ -1,0 +1,8 @@
+lib: [
+  "_build/install/default/lib/ocaml_advent/META"
+  "_build/install/default/lib/ocaml_advent/dune-package"
+  "_build/install/default/lib/ocaml_advent/opam"
+]
+bin: [
+  "_build/install/default/bin/ocaml_advent"
+]

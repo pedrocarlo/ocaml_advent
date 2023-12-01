@@ -1,0 +1,4 @@
+(executable
+ (public_name ocaml_advent)
+ (name p1)
+ (libraries ocaml_advent))
