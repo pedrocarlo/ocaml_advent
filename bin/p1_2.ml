@@ -12,14 +12,19 @@ let rec read_elf_pouch ic =
     close_in_noerr ic;
     None
 
-let rec max_elf_pouch curr_max ic =
+let rec filter l x =
+  match l with
+  | [] -> []
+  | h :: t -> if x > h then x :: filter t h else h :: filter t x
+
+let rec max_elf_pouchs curr_maxs ic =
   let curr = read_elf_pouch ic in
   match curr with
-  | None -> curr_max
-  | Some x ->
-      if x > curr_max then max_elf_pouch x ic else max_elf_pouch curr_max ic
+  | None -> curr_maxs
+  | Some x -> max_elf_pouchs (filter curr_maxs x) ic
 
-let m = max_elf_pouch 0 ic;;
+let m = max_elf_pouchs [ 0; 0; 0 ] ic
+let s = List.fold_right ( + ) m 0;;
 
-print_int m;
+print_int s;
 print_newline ()
