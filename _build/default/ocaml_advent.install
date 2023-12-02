@@ -4,5 +4,9 @@ lib: [
   "_build/install/default/lib/ocaml_advent/opam"
 ]
 bin: [
-  "_build/install/default/bin/ocaml_advent"
+  "_build/install/default/bin/p1"
+  "_build/install/default/bin/p1_2"
+]
+doc: [
+  "_build/install/default/doc/ocaml_advent/README.md"
 ]

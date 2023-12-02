@@ -1,4 +1,4 @@
 (executables
- (public_names p1 p1_2 p2)
- (names p1 p1_2 p2)
+ (public_names p1 p1_2 p2 p2_2)
+ (names p1 p1_2 p2 p2_2)
  (libraries ocaml_advent core))

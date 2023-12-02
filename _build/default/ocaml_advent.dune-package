@@ -1,4 +1,4 @@
 (lang dune 3.12)
 (name ocaml_advent)
-(sections (lib .) (bin ../../bin))
-(files (lib (META dune-package opam)) (bin (ocaml_advent)))
+(sections (lib .) (bin ../../bin) (doc ../../doc/ocaml_advent))
+(files (lib (META dune-package opam)) (bin (p1 p1_2)) (doc (README.md)))
