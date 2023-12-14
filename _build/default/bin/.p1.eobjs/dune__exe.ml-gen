@@ -23,3 +23,24 @@ module P4 = Dune__exe__P4
 
 (** @canonical Dune__exe.P4_2 *)
 module P4_2 = Dune__exe__P4_2
+
+(** @canonical Dune__exe.P5 *)
+module P5 = Dune__exe__P5
+
+(** @canonical Dune__exe.P5_2 *)
+module P5_2 = Dune__exe__P5_2
+
+(** @canonical Dune__exe.P5_correct *)
+module P5_correct = Dune__exe__P5_correct
+
+(** @canonical Dune__exe.P6 *)
+module P6 = Dune__exe__P6
+
+(** @canonical Dune__exe.P6_2 *)
+module P6_2 = Dune__exe__P6_2
+
+(** @canonical Dune__exe.P7 *)
+module P7 = Dune__exe__P7
+
+(** @canonical Dune__exe.P7_2 *)
+module P7_2 = Dune__exe__P7_2
