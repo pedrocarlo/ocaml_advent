@@ -1,1 +1,1 @@
-bin/p4.mli:
+bin/p4.pp.mli:

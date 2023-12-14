@@ -53,15 +53,11 @@ let parse_file curr_dir line =
   | first :: name :: _ ->
       if String.equal first "dir" then Dir (curr_dir, name, ref [])
       else
-        (* String.to_list first
-           |> List.iter ~f:(fun e -> printf "%d" (Char.to_int e));
-           printf "\n"; *)
         File { size = Int.of_string first; name }
   | _ -> failwith "not a file"
 
 let parse_dir dir file =
   match dir with
-  (* | None -> failwith "cannot have dir as none" *)
   | File _ -> failwith "cannot have dir as a file"
   | Dir (_, _, file_lst) ->
       if not (List.mem !file_lst file ~equal:phys_equal) then
@@ -84,11 +80,6 @@ let parse ~root lines =
           loop (parent, curr_dir) tl
   in
   loop (root, root) lines
-
-(* let file_type_to_repr file_t =
-   match file_t with
-   | File x -> Format.sprintf "%s (file, size=%d)" x.name x.size
-   | Dir (_, name, _) -> Format.sprintf "%s (dir)" name *)
 
 let rec print_spaces x =
   if Int.equal x 0 then ()

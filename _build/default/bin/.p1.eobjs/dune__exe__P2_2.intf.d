@@ -1,1 +1,1 @@
-bin/p2_2.mli:
+bin/p2_2.pp.mli:

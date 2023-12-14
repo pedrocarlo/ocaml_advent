@@ -1,1 +1,1 @@
-bin/p6.mli:
+bin/p6.pp.mli:

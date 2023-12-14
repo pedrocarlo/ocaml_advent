@@ -1,1 +1,1 @@
-bin/p5_correct.mli:
+bin/p5_correct.pp.mli:

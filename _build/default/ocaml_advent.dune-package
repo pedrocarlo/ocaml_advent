@@ -3,5 +3,6 @@
 (sections (lib .) (bin ../../bin) (doc ../../doc/ocaml_advent))
 (files
  (lib (META dune-package opam))
- (bin (p1 p1_2 p2 p2_2 p3 p3_2 p4 p4_2 p5 p5_2))
+ (bin
+  (p1 p1_2 p2 p2_2 p3 p3_2 p4 p4_2 p5 p5_2 p5_correct p6 p6_2 p7 p7_2 p8 p8_2))
  (doc (README.md)))

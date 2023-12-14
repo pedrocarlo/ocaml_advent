@@ -1,1 +1,1 @@
-bin/p1.ml:
+bin/p1.pp.ml: Ppx_module_timer_runtime

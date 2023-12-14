@@ -44,3 +44,9 @@ module P7 = Dune__exe__P7
 
 (** @canonical Dune__exe.P7_2 *)
 module P7_2 = Dune__exe__P7_2
+
+(** @canonical Dune__exe.P8 *)
+module P8 = Dune__exe__P8
+
+(** @canonical Dune__exe.P8_2 *)
+module P8_2 = Dune__exe__P8_2

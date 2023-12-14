@@ -1,1 +1,1 @@
-bin/p4_2.ml: Core Fun In_channel List String
+bin/p4_2.pp.ml: Core Fun In_channel List Ppx_module_timer_runtime String

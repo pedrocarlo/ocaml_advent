@@ -1,1 +1,1 @@
-bin/p7.mli:
+bin/p7.pp.mli:

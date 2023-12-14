@@ -6,6 +6,21 @@ lib: [
 bin: [
   "_build/install/default/bin/p1"
   "_build/install/default/bin/p1_2"
+  "_build/install/default/bin/p2"
+  "_build/install/default/bin/p2_2"
+  "_build/install/default/bin/p3"
+  "_build/install/default/bin/p3_2"
+  "_build/install/default/bin/p4"
+  "_build/install/default/bin/p4_2"
+  "_build/install/default/bin/p5"
+  "_build/install/default/bin/p5_2"
+  "_build/install/default/bin/p5_correct"
+  "_build/install/default/bin/p6"
+  "_build/install/default/bin/p6_2"
+  "_build/install/default/bin/p7"
+  "_build/install/default/bin/p7_2"
+  "_build/install/default/bin/p8"
+  "_build/install/default/bin/p8_2"
 ]
 doc: [
   "_build/install/default/doc/ocaml_advent/README.md"
