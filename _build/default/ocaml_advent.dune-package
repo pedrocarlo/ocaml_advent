@@ -5,6 +5,8 @@
  (lib (META dune-package opam))
  (bin
   (p1
+   p10
+   p10_2
    p1_2
    p2
    p2_2

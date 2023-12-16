@@ -5,6 +5,8 @@ lib: [
 ]
 bin: [
   "_build/install/default/bin/p1"
+  "_build/install/default/bin/p10"
+  "_build/install/default/bin/p10_2"
   "_build/install/default/bin/p1_2"
   "_build/install/default/bin/p2"
   "_build/install/default/bin/p2_2"

@@ -10,27 +10,29 @@ let parse_operation line =
   let split = String.split ~on:' ' line in
   match split with _ :: amount :: _ -> Some (int_of_string amount) | _ -> None
 
-let rec cycle register_x operations prev_op count accum =
-  let curr_accum =
-    if modulo (count - 20) 40 = 0 && count < 221 then (
-      printf "Count %d\n" count;
-      printf "Register_x: %d\n" register_x;
-      (count * register_x) :: accum)
-    else accum
-  in
+let draw cycle_count sprite_pos =
+  if
+    List.map
+      ~f:(fun e -> Int.equal (e + sprite_pos) (modulo (cycle_count - 1) 40))
+      [ -1; 0; 1 ]
+    |> List.fold ~init:false ~f:( || )
+  then printf "#"
+  else printf "."
+
+let rec cycle register_x operations prev_op count =
+  if Int.equal (modulo (count - 1) 40) 0 then printf "\n";
+  draw count register_x;
   match prev_op with
   | None -> (
       match operations with
-      | [] -> accum
+      | [] -> ()
       | hd :: tl -> (
           match hd with
-          | None -> cycle register_x tl None (count + 1) curr_accum
-          | add -> cycle register_x tl add (count + 1) curr_accum))
-  | Some x -> cycle (register_x + x) operations None (count + 1) curr_accum
+          | None -> cycle register_x tl None (count + 1)
+          | add -> cycle register_x tl add (count + 1)))
+  | Some x -> cycle (register_x + x) operations None (count + 1)
 
 let operations =
   In_channel.read_lines "../lib/p10.txt" |> List.map ~f:parse_operation
 
-let signals = cycle 1 operations None 1 []
-let sum = List.fold ~init:0 ~f:( + ) signals
-let () = printf "%d\n" sum
+let () = cycle 1 operations None 1
