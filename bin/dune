@@ -18,7 +18,9 @@
   p8
   p8_2
   p9
-  p9_2)
+  p9_2
+  p10
+  p10_2)
  (names
   p1
   p1_2
@@ -38,7 +40,9 @@
   p8
   p8_2
   p9
-  p9_2)
+  p9_2
+  p10
+  p10_2)
  (libraries ocaml_advent core str)
  (preprocess
   (pps ppx_jane)))
