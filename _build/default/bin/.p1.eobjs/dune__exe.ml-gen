@@ -50,3 +50,9 @@ module P8 = Dune__exe__P8
 
 (** @canonical Dune__exe.P8_2 *)
 module P8_2 = Dune__exe__P8_2
+
+(** @canonical Dune__exe.P9 *)
+module P9 = Dune__exe__P9
+
+(** @canonical Dune__exe.P9_2 *)
+module P9_2 = Dune__exe__P9_2

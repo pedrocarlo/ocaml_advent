@@ -21,6 +21,8 @@ bin: [
   "_build/install/default/bin/p7_2"
   "_build/install/default/bin/p8"
   "_build/install/default/bin/p8_2"
+  "_build/install/default/bin/p9"
+  "_build/install/default/bin/p9_2"
 ]
 doc: [
   "_build/install/default/doc/ocaml_advent/README.md"
