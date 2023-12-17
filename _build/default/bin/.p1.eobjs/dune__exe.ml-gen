@@ -9,6 +9,12 @@ module P10 = Dune__exe__P10
 (** @canonical Dune__exe.P10_2 *)
 module P10_2 = Dune__exe__P10_2
 
+(** @canonical Dune__exe.P11 *)
+module P11 = Dune__exe__P11
+
+(** @canonical Dune__exe.P11_2 *)
+module P11_2 = Dune__exe__P11_2
+
 (** @canonical Dune__exe.P1_2 *)
 module P1_2 = Dune__exe__P1_2
 
