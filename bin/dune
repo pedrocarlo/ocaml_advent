@@ -22,7 +22,9 @@
   p10
   p10_2
   p11
-  p11_2)
+  p11_2
+  p12
+  p12_2)
  (names
   p1
   p1_2
@@ -46,7 +48,9 @@
   p10
   p10_2
   p11
-  p11_2)
- (libraries ocaml_advent core str)
+  p11_2
+  p12
+  p12_2)
+ (libraries ocaml_advent core str core_kernel.pairing_heap)
  (preprocess
   (pps ppx_jane)))
